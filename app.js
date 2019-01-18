@@ -67,6 +67,7 @@ database.ref().on("child_added", function(childSnapshot) {
     var tRemainder = diffTime % childSnapshot.val().frequency;
     console.log(tRemainder);
     var tMinutes = childSnapshot.val().frequency - tRemainder;
+    
     console.log(tMinutes);
     var nextTrain = moment().add(tMinutes, "minutes");
     console.log(nextTrain);
@@ -79,7 +80,7 @@ childSnapshot.val().destination);
 $("#frequency").append("<div><span class='member-name'>" +
 childSnapshot.val().frequency);
 $("#arrival").append("<div><span class='member-name'>" +
-childSnapshot.val().nextTrain);
+nextTrain.format("HH:mm"));
 $("#minaway").append("<div><span class='member-name'>" + tMinutes);
 }); // Ends databse.ref() function
 
