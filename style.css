@@ -1,0 +1,24 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-image: url(train3.jpg);
+}
+
+.form-group {
+ color: white;
+}
+
+#table-body {
+    color: white;
+}
+
+#userInputColor {
+    color: white;
+    background: black;
+    opacity: .7;
+}
+
+

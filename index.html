@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">A&J Express</h1>
+        </div>
+
+        <div class="row">
+        <div class="col-4">
+        <form>
+            <div class="form-group">
+                <label for="name">Train Name</label>
+                <input type="text" input" id="trainName">
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="trainDestination">
+            </div>
+
+            <div class="form-group">
+                <label for="startTime">First Train Time</label>
+                <input type="text" id="startTrain">
+            </div>
+
+            <div class="form-group">
+                <label for="frequency">Frequency (min)</label>
+                <input type="text" id="trainFrequency">
+            </div>
+
+            <button type="submit" class="btn btn-light" id="submit">Add Train</button>
+        </form>
+        </div>
+
+        <div class="col-8">
+            <table class="table">
+                <thead class="thead-light" id="tableBody">
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency(min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                <tr id="userInputColor">
+                    <td scope="row" id="name"></td>
+                    <td scope="row" id="destination"></td>
+                    <td scope="row" id="frequency"></td>
+                    <td scope="row" id="arrival"></td>
+                    <td scope="row" id="minaway"></td>
+                </tr>
+                
+                </tbody>
+                </table>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
