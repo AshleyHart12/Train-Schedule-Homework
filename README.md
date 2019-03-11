@@ -12,4 +12,4 @@ https://ashleyhart12.github.io/Train-Schedule-Homework/
 - Moment.js
 
 ![Website Snapshot](screenshot.png)
-Format: ![Alt Text](url)
+
