@@ -10,3 +10,6 @@ https://ashleyhart12.github.io/Train-Schedule-Homework/
 - jQuery
 - Firebase
 - Moment.js
+
+![Website Snapshot](screenshot.png)
+Format: ![Alt Text](url)
